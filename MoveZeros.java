@@ -4,7 +4,7 @@
  * Author: Nick Burkett
  * Date: 01/25/25
  *
- * Status: WIP
+ * Status: SOLVED
  */
 class MoveZeros{
 
