@@ -39,7 +39,18 @@ class MoveZeros{
 
         //Here is my public method for testing/running MoveZeros.
         public static void main(String[] args){
+                
+                MoveZeros tmpObj = new MoveZeros();     //Create instance of the class for testing.
 
-                System.out.println("Hello World");
+                int[] tmpArr = {0, 1, 0, 3, 12};        //Create some test data.
+
+                tmpObj.zeros(tmpArr);       //Call my method on the test array.
+
+                //Now I need to loop through to check my updated array.
+                for(int i: tmpArr){
+                        System.out.println(i);
+                }
+
+
         }
 }
