@@ -24,8 +24,14 @@ class MoveZeros{
                         //Check if I have a valid element. 
                         if(nums[i] != 0){
                                 nums[insertPos] = nums[i];  //Update the array accordingly if not a 0.
-                                insertPost ++;              //Increment the insertPos variable.
+                                insertPos ++;              //Increment the insertPos variable.
                         }
+                }
+
+                //Now, I need to backfill the remaining positions with zeros.
+                while(insertPos < nums.length){
+                        nums[insertPos] = 0;     //Add the zeros to the end.
+                        insertPos ++;            //Increment insertPos.
                 }
 
 
